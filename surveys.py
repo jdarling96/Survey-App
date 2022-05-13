@@ -6,6 +6,7 @@ class Question:
 
         if not choices:
             choices = ["Yes", "No"]
+        # if no choices are passed through dynamically, choices = yes or now    
 
         self.question = question
         self.choices = choices
