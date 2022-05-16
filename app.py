@@ -23,8 +23,8 @@ def home_page():
     return render_template('home.html', title=title, instructions=instructions)
 
 @app.route('/store-session', methods=["POST"])
-""" POST request to server setting session of survey choices to an empty list """
 def store_sessions():
+    """POST request to server setting session of survey choices to an empty list """
     session["res"] = []  
     return redirect('/questions/0') 
 
